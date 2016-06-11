@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+#div1
+{
+position: relative;
+height: 150px;
+width: 150px;
+margin: 50px;
+padding:10px;
+border: 1px solid black;
+
+-webkit-perspective:15;
+}
+
+#div2
+{
+padding:5px;
+position: absolute;
+border: 1px solid black;
+background-color: yellow;
+transform: rotateX(45deg);
+-webkit-transform: rotateX(45deg);} 
+div
+{
+resize:both;
+overflow:auto;
+}
+div.m{
+border: 15px solid  ;
+padding: 50px 60px;
+height: 300px;
+width: 600px;
+border-radius: 20px;
+	box-shadow: 10px 10px 5px 5px  #888888;
+	border-image: url(oj.jpg) 30 30 round;
+	background-image: url(1.jpg),url(2.jpg);
+	background-repeat: no-repeat;
+	background-size: 50% 50%,50% 50%;
+	background-position: 50% 50%,100% 100%;
+}
+div.j
+{
+width:100px;
+height:100px;
+background:red;
+animation:myfirst 5s;
+position:relative;
+}
+@keyframes myfirst
+{
+from {background:red;}
+to {background:yellow;}
+}
+div.l{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:mysecond 5s;
+
+}
+@keyframes mysecond
+{
+	0%{background: red;left:0px;top: 0px;}
+	25%{background: blue;left:200px;top: 0px;}
+	50%{background: green;left:200px;top:200px;}
+	75%{background:purple;left:0px;top:200px;}
+	100%{background: yellow;left:0px;top:0px;}
+}
+body{
+background-size: 40% 100%;
+background-image:url(4.jpg);
+background-repeat: no-repeat;
+/*transform: rotateY(60deg);
+transform-style: preserve-3d;*/
+}
+h1{
+	text-shadow:5px 5px 5px #00ff00;
+}
+p{
+	border: 2px solid  red;
+	word-wrap:break-word;
+	width: 10em;
+}
+.i{-webkit-column-count:3;
+	-webkit-column-rule:4px outset #ff0000;
+}
+.a{
+	border: 2px solid green;
+	width: 10em;
+	
+	overflow: scroll;
+	white-space: nowrap;
+
+}
+.u{
+	border: 2px solid green;
+	width: 10em;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	/*transform:translate(50, 60);
+	transform:rotate(30deg);
+	transform:scale(4,5);*/
+	transform:skew(3deg,2deg); 
+}
+.u:hover{
+	text-overflow: inherit;
+    overflow: visible;
+}
+.t{
+	transition:width 3s;
+	border: 2px solid green;
+	width: 10em;
+	text-overflow:clip;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.t:hover{
+    width: 300px;
+	text-overflow:inherit;
+	overflow: visible;
+}
+</style>
+</head>
+<body>
+<div class="l"></div>
+<h1>kjgdshfiuhg</h1>
+<p>fdjghfhjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+<p class="i">hjgdsfjygufhvbvgvbbvbbvbvbbvbvbvbvbvbvbvbbvbvbbv</p>
+<p class="u">hkdfhgsiuhjfdgkjgdfkjgjkdfhjkshuiufhyuriegh</p>
+<p class="t">hdskfjghuofhgdsfvdshfjsdfjdsjdhgddhdhdhhdhh</p>
+<p class="a">idghiodsfuygdhgdsjjhjjdjdjdjjjjjjjjjjjjjjjjjjjjjjj</p>
+<div id="div1"><div id="div2"></div></div>
+
+<div class="m"></div>
+<div class="j"></div>
+<div class="l"></div>
+</body>
+</html>

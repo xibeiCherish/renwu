@@ -1,0 +1,21 @@
+h1{
+	color:#280694;
+	font-family: "Microsoft YaHei","微软雅黑";
+}
+p{
+	margin-left: 20px;
+	color:#444888;
+	font-family: "Arial";
+}
+body{
+	background-image: url("oj.jpg") ;
+	background-repeat: no-repeat;
+	background-size: 2000px 2000px;}
+p.left {
+	width: 400px;
+	float: left;
+}
+h1.right{
+	width:600px;
+	float:right;
+}

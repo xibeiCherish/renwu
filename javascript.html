@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<p id="aa">改变html内容</p>
+<p id="bb">改变html样式</p>
+<script>
+document.write("<h1>直接写入html文本流</h1>");
+document.write(Date());
+function a()
+{
+	x=document.getElementById("aa");
+	x.innerHTML="fighting!";
+}
+function b()
+{
+	x=document.getElementById("bb");
+	x.style.color="#ff0000";
+}
+function c()
+{
+	ca=document.getElementById("cc");
+	if (ca.src.match("1.jpg"))
+	{
+	ca.src="2.jpg";
+	}
+	else
+	{
+	ca.src="1.jpg";
+	}
+}
+document.write("<br>")
+var pi=3.14;
+var name="Bill Gates";
+var answer='Yes I am!';
+document.write("hello\
+	world");
+document.write("<br>")
+document.write(pi + "<br>");
+document.write(name + "<br>");
+document.write(answer + "<br>");
+var person={
+firstname : "John",
+lastname  : "Doe",
+id        :  5566
+};
+document.write(person.lastname + "<br>");
+document.write(person["lastname"] + "<br>");
+var txt="abcdefghijklmnopqrstuvwxyz";
+document.write("<p>"+txt.length+"</p>");
+document.write("以上为内置属性计算长度"+"<br>");
+function myFunction()
+{
+var x=5+5;
+var y="5"+5;
+var z="Hello"+5;
+
+var demoP=document.getElementById("demo");
+demoP.innerHTML=x + "<br>" + y + "<br>" + z;
+}
+function d1()
+{
+	var age,da;
+	age=document.getElementById("age").value;
+	da=(age<18)?"年龄太小":"年龄已达到";
+	document.getElementById("db").innerHTML=da;
+}
+// var fruits = ["a","b","c","d"];
+// document.getElementById("dc").innerHTML = isArray(fruits);
+// function isArray(myArray){
+// 	return myArray.constructor.toString().indexOf("Array")>-1;
+// }
+
+</script>
+<button type="button" onclick="alert('succeed')">对事件的反应</button>
+<button type="button" onclick="b()">改变html样式</button>
+<button type="button" onclick="a()">改变html内容</button>
+<button onclick='getElementById("dd").innerHTML="改变此处"'>改变别的地方</button>
+<p id="dd"></p>
+<button onclick='this.innerHTML="改变自身"'>自身</button>
+<img src="1.jpg" id="cc" onclick="c()" width="80px" height="80px" >
+<button onclick="myFunction()">点击这里</button>
+<p id="demo"></p>
+年龄：<input id="age" value="18"/>
+<button onclick="d1()">点击按钮测试年龄</button>
+<p id="db"></p>
+<!-- <p>判断是否为数组</p>
+<p id="dc"></p> -->
+</body>
+</html>

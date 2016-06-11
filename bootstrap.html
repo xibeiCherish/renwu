@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- <link rel="stylesheet" href="reset.css"> -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet"  href="css/yourstyle.css">
+	<style type="text/css">
+	.file-box{ position:relative;width:340px} 
+.txt{ height:22px; border:1px solid #cdcdcd; width:180px;} 
+.btn{ background-color:#FFF; border:1px solid #CDCDCD;height:24px; width:70px;} 
+.file{ position:absolute; top:0; right:80px; height:24px; filter:alpha(opacity:0);opacity: 0;width:260px }
+ </style>
+</head>
+<body>
+<div class="jumbotron">
+<h1>hello world!</h1>
+<h2>hello world!</h2>
+<h3>hello world!</h3>
+<h4>hello world!</h4>
+<h5>hello world!</h5>
+<h6>hello world!</h6>
+<div class="h1 text-primary"><div class="text-primary"><small>hello world!</small></div>
+<div class="h2"><small>hello world!</small></div>
+<div class="h3"><small>hello world!</small></div>
+<div class="h4"><small>hello world!</small></div>
+<div class="h5"><small>hello world!</small></div>
+<div class="h6"><small>hello world!</small></div>
+<div class="text-primary">hello world!</div>
+<div class="text-muted">hello world!减弱</div>
+<div class="text-success">hello world!</div>
+<div class="text-info">hello world!</div>
+<div class="text-warning">hello world!</div>
+<div class="text-danger">hello world!</div>
+<p>lasdfghidsfug<strong>fdsi</strong>gbbf<b>dsgdfhbgf</b>hfdjhtjtryh<br/>
+jkipgo<em>jofiphd</em>jods<i>hgu</i>dofhjkshnfjsfh</p>
+<!-- <p class="lead">加大字号，加粗文本，处理行高和margin       ouifhidsugfbdsmhsbbmnnmnb<br/>dsfguasdyhfjdvgdcxbnvnbvvvvvvvvvvvvvvvvvvvvvvv</p> -->
+<p class="text-left">zuo</p><p class="text-center">zhong</p><p class="text-right">you</p><p class="text-justify">两端对齐<b>?????</b></p>
+<p><a href="#">learn more</a></p>
+<h5>普通列表</h5>
+<ul>
+<li>无序列表信息1</li>
+<li>无序列表信息2</li>
+<li>无序列表信息3</li>
+</ul>
+<h5>有序列表</h5>
+<ol>
+<li>有序列表信息1</li>
+<li>有序列表信息2</li>
+<li>有序列表信息3</li>
+</ol>
+<dl>
+<dt>标题</dt>
+<dd>列表信息1</dd>
+<dd>列表信息2</dd>
+</dl>
+<ul>
+<li>
+	项目列表
+	<ul>
+		<li>带符号</li>
+		<li>带符号</li>
+	</ul>
+</li>
+<li>
+	项目列表
+	<ul class="list-unstyled">
+		<li>不带符号</li>
+		<li>不带符号</li>
+	</ul>
+	<li>带符号</li>
+</li>
+</ul>
+<ol>
+<li>
+<ol>
+<li>带符号</li>
+</ol>
+</li>
+<li>	
+<ol class="list-unstyled">
+	<li>不带符号</li>
+</ol>
+</li>
+</ol>
+<h4>内联列表</h4>
+<ul class="list-inline">
+	<li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+<h4>水平的定义列表</h4>
+<dl class="dl-horizontal" style="width=600px">
+	<dt>Description 1</dt>
+  <dd >Item 1</dd>
+  <dt>Description 2</dt>
+  <dd>Item 2</dd>
+</dl>
+</div>
+<abbr title="World Wide Web">WWW</abbr>
+<abbr title="Real Simple Syndication" class="initialism">RSS</abbr>
+<form role="form">
+   <div class="form-group">
+      <label for="name">名称</label>
+      <input type="text" class="form-control" id="name" 
+         placeholder="请输入名称">
+   </div>
+   <div class="form-group">
+      <label for="inputfile">文件输入</label>
+      <input type="file" id="inputfile">
+      <p class="help-block">这里是块级帮助文本的实例。</p>
+   </div>
+   <div class="checkbox">
+      <label>
+      <input type="checkbox"> 请打勾
+      </label>
+   </div>
+   <button type="submit" class="btn btn-default">提交</button>
+</form>
+<div class="file-box"> 
+<form action="" method="post" enctype="multipart/form-data"> 
+<input type='text' name='textfield' id='textfield' class='txt' /> 
+<input type='button' class='btn' value='浏览...' /> 
+<input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" /> 
+<input type="submit" name="submit" class="btn" value="上传" /> 
+</form> 
+</div> 
+
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

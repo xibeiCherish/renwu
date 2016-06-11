@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style type="text/css">
+		video,div,canvas{
+		-webkit-transform:rotateX(30deg) rotateY(-45deg);
+		}
+		</style>
+		}
+	</head>
+	<body>
+		<div>
+			<canvas id="a2d"></canvas><br>
+			<canvas id="a3d"></canvas>
+		</div>
+		<iframe src="frameset.html"></iframe>
+		<!-- <div>place holder</div> -->
+		<script type="text/javascript">
+			var size=300;
+			var a2dctx=document.getElementById('a2d').getContext('2d');
+			a2dctx.canvas.width=size;
+			a2dctx.canvas.height=size;
+			a2dctx.fillStyle="rgba(0,192,192,80)";
+			a2dctx.fillRect(0,0,200,200);
+			var a3dctx=document.getElementById('a3d').getContext('experimental-webg1');
+			a3dctx.canvas.width=size;
+			a3dctx.canvas.height=size;
+			a3dctx.clearColor(0.0,192.0/255.0,192.0/255.0,80.0/255.0);
+				a3dctx.clear(a3dctx.COLOR_BUFFER_BIT);
+		</script>
+	</body>
+</html>
